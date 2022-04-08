@@ -17,6 +17,14 @@ Route::get('/', function () {
     return view('auth.login');
 });
 
+Route::get('/new-login', function () {
+    return view('test.new-login-last');
+});
+
+Route::get('/new-register', function () {
+    return view('register');
+});
+
 Auth::routes();
 
 
